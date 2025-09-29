@@ -207,17 +207,8 @@ header .links .form i {
     max-width: 100%;
     text-align: center;
 }
-.service {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 30px;
-  margin-top: 80px;
-}
-@media (max-width: 768px) {
-  .srv {
-    flex-direction: column;
-    text-align: center;
-  }
+.services .service {
+  padding-top: 100px;
 }
 .service .srv {
   display: flex;
@@ -236,6 +227,28 @@ header .links .form i {
   padding-top : 30px;
   padding-bottom : 30px;
   
+}
+@media (min-width: 768px) {
+  .services .service {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 30px; ;
+
+  }
+}
+@media (max-width: 768px) {
+  .services .service .srv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .service .srv .text {
+   padding-left: 0px;
+}
+ .service .srv i {
+  padding-bottom: 20px;
+ }
 }
 /* End Services */
 /* Start Description */
